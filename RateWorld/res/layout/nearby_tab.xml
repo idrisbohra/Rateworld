@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/exchangeNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/nearbytab_exchangeNameTextViewLeft"
+        android:layout_marginTop="@dimen/nearbytab_exchangeNameTextViewTop"
+        android:layout_toLeftOf="@+id/mapImageView"
+        android:text="Loading.."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#4c4c4c"
+        android:textSize="@dimen/nearbytab_textsize01"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/exchangeAddrTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/exchangeNameTextView"
+        android:layout_below="@+id/exchangeNameTextView"
+        android:layout_toLeftOf="@+id/mapImageView"
+        android:text="Loading"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#4c4c4c"
+        android:textSize="@dimen/nearbytab_textsize02" />
+
+    <TextView
+        android:id="@+id/exchangeDistTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/exchangeAddrTextView"
+        android:layout_below="@+id/exchangeAddrTextView"
+        android:text="Loading..."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#4c4c4c"
+        android:textSize="@dimen/nearbytab_textsize02" />
+
+    <ImageView
+        android:id="@+id/mapImageView"
+        android:layout_width="@dimen/nearbytab_mapImageViewWidthHeight"
+        android:layout_height="@dimen/nearbytab_mapImageViewWidthHeight"
+        android:paddingBottom="@dimen/nearbytab_mapImageViewpadBottom"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/exchangeNameTextView"
+        android:layout_marginRight="@dimen/nearbytab_mapImageViewRight"
+        android:src="@drawable/ic_launcher21" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mapImageView"
+        android:layout_alignRight="@+id/mapImageView"
+        android:layout_below="@+id/mapImageView"
+        android:gravity="center"
+        android:text="@string/map"
+        android:textSize="@dimen/nearbytab_textsize02"
+        android:layout_marginTop="@dimen/nearbytab_textView3Top"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/View54"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/nearbytab_View54Height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/exchangeDistTextView"
+        android:background="#4c4c4c" 
+        android:layout_marginTop="@dimen/nearbytab_View54Top"/>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/tab_paddingBottom"
+    android:background="@drawable/bg_rounded" >
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="@dimen/tab_flagWidthHeight"
+        android:layout_height="@dimen/tab_flagWidthHeight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ic_launcher14"
+		android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/tab_flagLeftRight"
+        android:layout_marginLeft="@dimen/tab_flagLeftRight" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="@dimen/tab_flagFrameWidthHeight"
+        android:layout_height="@dimen/tab_flagFrameWidthHeight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/flag_frame"
+         />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="Loading.."
+        android:layout_marginTop="@dimen/tab_textView11Top"
+        android:textSize="@dimen/tab_textSize01"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_below="@+id/textView11"
+        android:text="Loading.."
+        android:layout_marginTop="@dimen/tab_textView1Top"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="@dimen/tab_textSize02" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:text="Loading.."
+        android:layout_marginTop="@dimen/tab_textView1Top"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="@dimen/tab_textSize02" />
+
+</RelativeLayout>

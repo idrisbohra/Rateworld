@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pictureone" />
+
+    <com.rateworld.slidingimages.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_pager"
+        android:padding="10dip" />
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="@dimen/main_logoImageViewWidthHeight"
+        android:layout_height="@dimen/main_logoImageViewWidthHeight"
+        android:layout_above="@+id/appNameImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/main_logoImageViewBottom"
+        android:src="@drawable/ic_launcher"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/appNameImageView"
+        android:layout_width="@dimen/main_appNameWidth"
+        android:layout_height="@dimen/main_appNameHeight"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/app_name"
+        android:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="@dimen/main_progressBar1WidthHeight"
+        android:layout_height="@dimen/main_progressBar1WidthHeight"
+        android:layout_below="@+id/appNameImageView"
+        android:layout_toLeftOf="@+id/logoImageView"
+        android:max="100"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/loadingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/progressBar1"
+        android:layout_alignLeft="@+id/logoImageView"
+        android:layout_alignTop="@+id/progressBar1"
+        android:layout_marginLeft="@dimen/main_loadingTextViewLeft"
+        android:gravity="center"
+        android:text="Loading..."
+        android:textSize="@dimen/main_loadingTextSize"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#fff"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/View00"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/main_View00Height"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/main_View00LeftRight"
+        android:layout_marginRight="@dimen/main_View00LeftRight"
+        android:background="@drawable/bg_rounded"
+        android:visibility="gone" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/main_spinner1Height"
+        android:layout_alignLeft="@+id/View00"
+        android:layout_alignRight="@+id/View00"
+        android:layout_alignTop="@+id/View00"
+        android:layout_marginLeft="@dimen/main_spinner1Margin"
+        android:layout_marginRight="@dimen/main_spinner1Margin"
+        android:layout_marginTop="@dimen/main_spinner1Margin"
+        android:background="#e5e5e5"
+        android:visibility="gone" />
+
+    <com.rateworld.main.MultiSelectionSpinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/main_spinner2Height"
+        android:layout_alignLeft="@+id/spinner1"
+        android:layout_alignRight="@+id/spinner1"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginTop="@dimen/main_spinner2Top"
+        android:background="#e5e5e5"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/submitButton"
+        android:layout_width="@dimen/main_submitButtonWidthHeight"
+        android:layout_height="@dimen/main_submitButtonWidthHeight"
+        android:layout_below="@+id/View00"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/main_submitButtonTop"
+        android:background="@drawable/bg_submit"
+        
+        android:src="@drawable/ic_launcher08"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/main_menuHeight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/main_menuMargin"
+        android:layout_marginRight="@dimen/main_menuMargin"
+        android:layout_marginTop="@dimen/main_menuMargin"
+        android:background="@drawable/tabbackground03"
+        android:gravity="center"
+        android:padding="@dimen/main_menuPadding"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#4c4c4c"
+        android:textSize="@dimen/main_textSize01"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/intoCorrencyHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinner2"
+        android:layout_alignLeft="@+id/spinner2"
+        android:layout_alignRight="@+id/spinner2"
+        android:layout_alignTop="@+id/spinner2"
+        android:background="#e5e5e5"
+        android:paddingLeft="@dimen/main_intoCorrencyHintLeft"
+        android:paddingTop="@dimen/main_intoCorrencyHintTop"
+        android:text="SELECT CONVERT-INTO CURRENCY"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="@dimen/main_intoCorrencyHintTextSize"
+        android:visibility="gone" />
+
+    <!-- <View
+        android:id="@+id/view01"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/spinner3"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_toLeftOf="@+id/spinner3"
+        android:background="#fff"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/View01"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/spinner3"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/spinner3"
+        android:background="#fff"
+        android:visibility="gone" /> -->
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:paddingBottom="@dimen/main_updateViewPadding"
+        android:paddingTop="@dimen/main_updateViewPadding"
+        android:text="Last Updated : 00 Sep 0000, 00:00:00"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#fff"
+        android:textSize="@dimen/main_textSize01"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="@dimen/main_updateImageViewWidth"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_alignTop="@+id/textView14"
+        android:src="@drawable/ic_launcher07"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/View02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView04"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView14"
+        android:layout_marginLeft="@dimen/main_view02Margin"
+        android:layout_marginRight="@dimen/main_view02Margin"
+        android:background="@drawable/tabbackground04"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignLeft="@+id/View02"
+        android:layout_marginLeft="@dimen/main_textView02Left"
+        android:text="LOA"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/main_textSize02"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/spinner3"
+        android:layout_below="@+id/textView14"
+        android:layout_marginLeft="@dimen/main_editText1Margin"
+        android:layout_marginTop="@dimen/main_editText1Margin"
+        android:layout_toRightOf="@+id/TextView02"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/ofTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView02"
+        android:layout_below="@+id/TextView02"
+        android:layout_marginTop="@dimen/main_ofTextViewMargin"
+        android:text="Loading..."
+        android:textSize="@dimen/main_textSize01"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ofTextView"
+        android:layout_marginTop="@dimen/main_TextView04Margin"
+        android:textSize="@dimen/main_textSize03"
+        android:layout_toRightOf="@+id/imageView1"
+        android:paddingBottom="@dimen/main_TextView04Padding"
+        android:text="@string/near_by"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/calcuButton"
+        android:layout_width="@dimen/main_calcuButtonWidthHeight"
+        android:layout_height="@dimen/main_calcuButtonWidthHeight"
+        android:layout_alignBottom="@+id/View02"
+        android:layout_alignRight="@+id/View02"
+        android:layout_marginBottom="@dimen/main_calcuButtonBottom"
+        android:layout_marginRight="@dimen/main_calcuButtonRight"
+        
+        android:background="@drawable/bg_submit"
+        android:src="@drawable/ic_launcher10"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/view03"
+        android:layout_width="@dimen/main_view03Width"
+        android:layout_height="@dimen/main_view03Height"
+        android:layout_below="@+id/View02"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/main_view03Top"
+        android:background="#fff"
+        android:visibility="gone" />
+
+    <com.rateworld.swipemenulistview.SwipeMenuListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view03"
+        android:layout_marginLeft="@dimen/main_listLeftRightBottom"
+        android:layout_marginRight="@dimen/main_listLeftRightBottom"
+        android:layout_marginTop="@dimen/main_listTop"
+        android:divider="@null"
+        android:dividerHeight="@dimen/main_listDividerHeight"
+        android:layout_marginBottom="@dimen/main_listLeftRightBottom"
+        android:visibility="gone" />
+
+    
+
+    <com.rateworld.main.MultiSelectionSpinner03
+        android:id="@+id/spinner3"
+        android:layout_width="@dimen/main_spinner3WidthHeight"
+        android:layout_height="@dimen/main_spinner3WidthHeight"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_addcurrency"
+        android:layout_marginRight="@dimen/main_spinner03Right"
+        android:layout_marginBottom="@dimen/main_spinner03Bottom"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/backImageView"
+        android:layout_width="@dimen/main_updateImageViewWidth"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignTop="@+id/textView1"
+        android:visibility="gone"
+        android:src="@drawable/ic_launcher12" />
+
+    <ImageView
+        android:id="@+id/settingImageView"
+        android:layout_width="@dimen/main_updateImageViewWidth"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_alignTop="@+id/textView1"
+        android:visibility="gone"
+        android:src="@drawable/ic_launcher11" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="@dimen/main_nearByWidth"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/View02"
+        android:layout_alignLeft="@+id/ofTextView"
+        android:layout_below="@+id/ofTextView"
+        android:visibility="gone"
+        android:paddingTop="@dimen/main_nearBypaddingTop"
+        android:paddingBottom="@dimen/main_nearBypaddingBottom"
+        android:src="@drawable/ic_launcher13" />
+
+</RelativeLayout>

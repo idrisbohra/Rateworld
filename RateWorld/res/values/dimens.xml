@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+	<dimen name="main_menuHeight">50dp</dimen>
+    <dimen name="main_menuMargin">20dp</dimen>
+    <dimen name="main_menuPadding">7dp</dimen>
+    <dimen name="main_textSize01">16sp</dimen>
+    <dimen name="main_updateViewPadding">10dp</dimen>
+    <dimen name="main_updateImageViewWidth">40dp</dimen>
+    <dimen name="main_view02Margin">10dp</dimen>
+    <dimen name="main_textView02Left">20dp</dimen>
+    <dimen name="main_textSize02">24sp</dimen>
+    <dimen name="main_editText1Margin">5dp</dimen>
+    <dimen name="main_ofTextViewMargin">5dp</dimen>
+    <dimen name="main_TextView04Margin">5dp</dimen>
+    <dimen name="main_TextView04Padding">15dp</dimen>
+    <dimen name="main_textSize03">13sp</dimen>
+    <dimen name="main_calcuButtonWidthHeight">60dp</dimen>
+    <dimen name="main_calcuButtonBottom">-10dp</dimen>
+    <dimen name="main_calcuButtonRight">15dp</dimen>
+    <dimen name="main_view03Width">100dp</dimen>
+    <dimen name="main_view03Height">1dp</dimen>
+    <dimen name="main_view03Top">5dp</dimen>
+    <dimen name="main_listLeftRightBottom">20dp</dimen>
+    <dimen name="main_listTop">10dp</dimen>
+    <dimen name="main_listDividerHeight">10dp</dimen>
+    <dimen name="main_spinner3WidthHeight">55dp</dimen>
+    <dimen name="main_spinner03Right">25dp</dimen>
+    <dimen name="main_spinner03Bottom">10dp</dimen>
+    <dimen name="main_nearByWidth">20dp</dimen>
+    <dimen name="main_nearBypaddingBottom">10dp</dimen>
+    <dimen name="main_nearBypaddingTop">2dp</dimen>
+    
+    <dimen name="main_logoImageViewWidthHeight">55dp</dimen>
+    <dimen name="main_logoImageViewBottom">-30dp</dimen>
+    <dimen name="main_appNameWidth">250dp</dimen>
+    <dimen name="main_appNameHeight">100dp</dimen>
+    <dimen name="main_progressBar1WidthHeight">30dp</dimen>
+    <dimen name="main_loadingTextViewLeft">20dp</dimen>
+    <dimen name="main_loadingTextSize">14sp</dimen>
+    <dimen name="main_View00Height">170dp</dimen>
+    <dimen name="main_View00LeftRight">30dp</dimen>
+    <dimen name="main_spinner1Height">35dp</dimen>
+    <dimen name="main_spinner1Margin">20dp</dimen>
+    <dimen name="main_spinner2Height">35dp</dimen>
+    <dimen name="main_spinner2Top">15dp</dimen>
+    <dimen name="main_submitButtonWidthHeight">60dp</dimen>
+    <dimen name="main_submitButtonTop">-30dp</dimen>
+    <dimen name="main_intoCorrencyHintLeft">5dp</dimen>
+    <dimen name="main_intoCorrencyHintTop">10dp</dimen>
+    <dimen name="main_intoCorrencyHintTextSize">12sp</dimen>
+    
+    <dimen name="tab_paddingBottom">10dp</dimen>
+    <dimen name="tab_flagWidthHeight">50dp</dimen>
+    <dimen name="tab_flagLeftRight">10dp</dimen>
+    <dimen name="tab_flagFrameWidthHeight">70dp</dimen>
+    <dimen name="tab_textView11Top">10dp</dimen>
+    <dimen name="tab_textView1Top">2dp</dimen>
+    <dimen name="tab_textSize01">19sp</dimen>
+    <dimen name="tab_textSize02">14sp</dimen>
+    
+    <dimen name="aboutpage_logoImageViewTop">25dp</dimen>
+    <dimen name="aboutpage_appNameImageViewLeftRight">30dp</dimen>
+    <dimen name="aboutpage_appNameImageViewTop">-30dp</dimen>
+    <dimen name="aboutpage_View12LeftRight">20dp</dimen>
+    <dimen name="aboutpage_textView1Padding">10dp</dimen>
+    <dimen name="aboutpage_textView1Padding02">20dp</dimen>
+    <dimen name="aboutpage_textSize">18sp</dimen>
+    <dimen name="aboutpage_textView2marginTop">10dp</dimen>
+    <dimen name="aboutpage_textView2Right">10dp</dimen>
+    <dimen name="aboutpage_imageView2Right">-10dp</dimen>
+    <dimen name="aboutpage_TextView01Top">5dp</dimen>
+    <dimen name="aboutpage_TextView01BottomRight">10dp</dimen>
+    
+    <dimen name="nearbypage_textView1LeftTop">15dp</dimen>
+    <dimen name="nearbypage_cancelImageViewWidthHeight">30dp</dimen>
+    <dimen name="nearbypage_cancelImageViewTop">10dp</dimen>
+    <dimen name="nearbypage_cancelImageViewRight">15dp</dimen>
+    <dimen name="nearbypage_View15TopLeftRight">5dp</dimen>
+    <dimen name="nearbypage_textSize">17sp</dimen>
+    <dimen name="nearbypage_View15Height">1dp</dimen>
+    <dimen name="nearbypage_textView2TopBottom">15dp</dimen>
+    
+    <dimen name="settingmainpage_TextView02padTop">15dp</dimen>
+    <dimen name="settingmainpage_TextView02padBottom">20dp</dimen>
+    <dimen name="settingmainpage_View10Top">10dp</dimen>
+    <dimen name="settingmainpage_View10Height">1dp</dimen>
+    <dimen name="settingmainpage_width">270dp</dimen>
+    <dimen name="settingmainpage_textsize">18sp</dimen>
+    <dimen name="settingmainpage_imageView1Width">45sp</dimen>
+    
+    <dimen name="nearbytab_exchangeNameTextViewTop">10dp</dimen>
+    <dimen name="nearbytab_exchangeNameTextViewLeft">20dp</dimen>
+    <dimen name="nearbytab_textsize01">19sp</dimen>
+    <dimen name="nearbytab_textsize02">15sp</dimen>
+    <dimen name="nearbytab_mapImageViewWidthHeight">50dp</dimen>
+    <dimen name="nearbytab_mapImageViewpadBottom">5dp</dimen>
+    <dimen name="nearbytab_mapImageViewRight">20dp</dimen>
+    <dimen name="nearbytab_textView3Top">-5dp</dimen>
+    <dimen name="nearbytab_View54Top">10dp</dimen>
+    <dimen name="nearbytab_View54Height">1dp</dimen>
+    
+    <dimen name="nearbychild_textView1padLeftRight">5dp</dimen>
+    <dimen name="nearbychild_textView1textsize">14sp</dimen>
+    <dimen name="nearbychild_imageView1Width">45dp</dimen>
+    
+    <dimen name="settingtab_textView1padTop">20dp</dimen>
+    <dimen name="settingtab_textView1padBottom">10dp</dimen>
+    <dimen name="settingtab_textView1Textsize">18sp</dimen>
+    <dimen name="settingtab_sb_mdpadTopRight">20dp</dimen>
+    <dimen name="settingtab_sb_mdpadBottom">10dp</dimen>
+    <dimen name="settingtab_ImageView01Width">45dp</dimen>
+    <dimen name="settingtab_ImageView01padLeftTop">6dp</dimen>
+    
+    <dimen name="instructionpage_changeCurrencyHeight">250dp</dimen>
+    <dimen name="instructionpage_removeCurrencyHeight">250dp</dimen>
+    <dimen name="instructionpage_nearbyHeight">250dp</dimen>
+    <dimen name="instructionpage_addCurrency01Height">200dp</dimen>
+    <dimen name="instructionpage_addCurrency02Height">250dp</dimen>
+    <dimen name="instructionpage_imageView3Width">20dp</dimen>
+    <dimen name="instructionpage_imageView3Bottom">15dp</dimen>
+    
+    
+    
+    
+    
+</resources>

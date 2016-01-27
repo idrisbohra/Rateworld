@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sb_md"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ImageView01"
+        android:paddingBottom="@dimen/settingtab_textView1padBottom"
+        android:paddingTop="@dimen/settingtab_textView1padTop"
+        android:text="Notification"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#4c4c4c"
+        android:textSize="@dimen/settingtab_textView1Textsize"
+        android:textStyle="bold" />
+
+    <com.rateworld.switchbutton.SwitchButton
+        android:id="@+id/sb_md"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="@dimen/settingtab_sb_mdpadBottom"
+        android:paddingRight="@dimen/settingtab_sb_mdpadTopRight"
+        android:paddingTop="@dimen/settingtab_sb_mdpadTopRight" />
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="@dimen/settingtab_ImageView01Width"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="@dimen/settingtab_ImageView01padLeftTop"
+        android:paddingLeft="@dimen/settingtab_ImageView01padLeftTop"
+        android:src="@drawable/ic_launcher15" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="@dimen/settingtab_ImageView01Width"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher19"
+        android:visibility="gone" />
+
+</RelativeLayout>

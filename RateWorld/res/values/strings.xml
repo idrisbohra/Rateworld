@@ -1,0 +1,32 @@
+<resources>
+
+    <string name="app_name">Rateworld</string>
+	<string name="near_by"><u>SHOW NEAR-BY EXCHANGE</u></string>
+	<string name="near_by02">NEARBY EXCHANGES</string>
+	<string name="about_us">About Us</string>
+	<string name="instruction">Instructions</string>
+	<string name="copyright">2015 Copyright Rateworld</string>
+	<string name="right_reserved">All Right Reserved</string>
+	<string name="map"><u>MAP</u></string>
+	<string name="instructions"><u>INSTRUCTIONS</u></string>
+	<string name="no_exchange">NO NEARBY\nEXCHANGE FOUND</string>
+	<string name="about">Rateworld shows exchange rates of over 150 countries with easy and reliable 
+	    interface.\n\nThe intuitive UI of Rateworld shows you all the information you need in one single 
+	    screen.\n\n<u>FEATURES</u>\n\n1. Live currency exchange rates for more than 150 world currencies.
+	    \n\n2. Currrency calculator to compare and calculate the curriencies.\n\n3. Show list of NEARBY 
+	    money exchange centers within the range of 5 kms based on user current location.\n\n4. On-Map navigation between
+	    the user\'s current location and money exchange center.\n\n5. Auto updation with 1 minute of time interval.
+	    \n\n6. Daily NOTIFICATION of latest rates of selected currencies at 10 AM in the morning and 10 PM in the evening.
+	    \n\n7. Offline mode to allow currency conversion without internet connection.\n\n8. Display amount up to 5 decimal places.
+	    \n\n9. Add and compare too many currencies at the single time. </string>
+	<string name="child_noti">Activate daily notification message of today\'s and previous day rates of selected currencies at 10 AM in the morning and 10 PM in the evening</string>
+	<string name="instruction01">1. Tap on particular currency to set it as default.</string>
+	<string name="instruction01_after"><u>After Tap</u></string>
+	<string name="instruction02">2. Remove particular currency by sliding tab from right to left.</string>
+	<string name="instruction03">3. User can add more currencies by clicking on \'plus\' button.</string>
+	<string name="instruction03_after">On clicking, shows a popup with the list of currencies.</string>
+	<string name="instruction04">4. By clicking on \'NEARBY EXCHANGE\' shows a popup with the list of all nearby exchange centers within a range of 5 Kms.</string>
+	<string name="instruction04_after"><u>After click</u></string>	
+	<string name="instruction04_last">Clicking on     shows on-map navigation between  users\'s current location and money exchange center.</string>
+	
+</resources>

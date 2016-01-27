@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/settingmainpage_width"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <ExpandableListView
+        android:id="@+id/lvExp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:divider="#4c4c4c"
+        android:groupIndicator="@null" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="@dimen/settingmainpage_imageView1Width"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView02"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/View10"
+        android:src="@drawable/ic_launcher25" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/View10"
+        android:layout_alignRight="@+id/lvExp"
+        android:layout_below="@+id/View10"
+        android:paddingBottom="@dimen/settingmainpage_TextView02padBottom"
+        android:paddingTop="@dimen/settingmainpage_TextView02padTop"
+        android:text="@string/about_us"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="@dimen/settingmainpage_textsize"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/View10"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/settingmainpage_View10Height"
+        android:layout_below="@+id/lvExp"
+        android:layout_marginTop="@dimen/settingmainpage_View10Top"
+        android:layout_toRightOf="@+id/imageView1"
+        android:background="#4c4c4c" />
+
+    <View
+        android:id="@+id/View01"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/settingmainpage_View10Height"
+        android:layout_below="@+id/imageView1"
+        android:visibility="gone"
+        android:layout_toRightOf="@+id/imageView1"
+        android:background="#4c4c4c" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/View01"
+        android:layout_below="@+id/View01"
+        android:paddingBottom="@dimen/settingmainpage_TextView02padBottom"
+        android:paddingTop="@dimen/settingmainpage_TextView02padTop"
+        android:text="@string/about_us"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="@dimen/settingmainpage_textsize"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="@dimen/settingmainpage_imageView1Width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_alignTop="@+id/TextView01"
+        android:src="@drawable/ic_launcher16"
+        android:visibility="gone" />
+
+</RelativeLayout>

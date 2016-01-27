@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/View15"
+        android:divider="@null"
+        android:visibility="visible" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/nearbypage_textView1LeftTop"
+        android:layout_marginTop="@dimen/nearbypage_textView1LeftTop"
+        android:text="@string/near_by02"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#4c4c4c"
+        android:textSize="@dimen/nearbypage_textSize"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/cancelImageView"
+        android:layout_width="@dimen/nearbypage_cancelImageViewWidthHeight"
+        android:layout_height="@dimen/nearbypage_cancelImageViewWidthHeight"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/nearbypage_cancelImageViewRight"
+        android:layout_marginTop="@dimen/nearbypage_cancelImageViewTop"
+        android:src="@drawable/ic_launcher20" />
+
+    <View
+        android:id="@+id/View15"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/nearbypage_View15Height"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/cancelImageView"
+        android:layout_below="@+id/cancelImageView"
+        android:layout_marginLeft="@dimen/nearbypage_View15TopLeftRight"
+        android:layout_marginRight="@dimen/nearbypage_View15TopLeftRight"
+        android:layout_marginTop="@dimen/nearbypage_View15TopLeftRight"
+        android:background="#4c4c4c" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/View15"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/nearbypage_textView2TopBottom"
+        android:text="@string/no_exchange"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#4c4c4c"
+        android:visibility="gone"
+        android:paddingBottom="@dimen/nearbypage_textView2TopBottom"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

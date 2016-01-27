@@ -1,0 +1,75 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rateworld"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="22" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity android:name="com.rateworld.main.MainActivity"  android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+                    
+        <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+				
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.rateworld.main.MultiSelectionSpinner" android:screenOrientation="portrait"></activity>
+        
+        <activity android:name="com.rateworld.main.MainActivity02" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait"  android:theme="@android:style/Theme.Holo.Light.NoActionBar"></activity>
+        
+        <activity android:name="com.rateworld.main.AboutActivity" android:screenOrientation="portrait"  android:theme="@android:style/Theme.Holo.Light.NoActionBar"></activity>
+        <activity android:name="com.rateworld.main.InstructionActivity" android:screenOrientation="portrait"  android:theme="@android:style/Theme.Holo.Light.NoActionBar"></activity>
+        
+        <receiver
+            android:name="com.rateworld.main.BCReceiver02">
+            
+             </receiver>
+        
+        <receiver
+            android:name="com.rateworld.main.BCReceiver">
+            
+             </receiver>
+             
+        <receiver
+            android:name="com.rateworld.main.BCReceiver03">
+            <!-- <intent-filter>
+    		<action android:name="android.intent.action.BOOT_COMPLETED" />
+   			</intent-filter> -->
+             </receiver>
+             
+        <receiver
+            android:name="com.rateworld.main.BootReceiver"
+            >
+            <intent-filter>
+    		<action android:name="android.intent.action.BOOT_COMPLETED" />
+   			</intent-filter>
+             </receiver>
+      
+      <service
+            android:name="com.rateworld.main.ServiceActivity"
+            android:enabled="true"
+             />  
+             
+      <service
+            android:name="com.rateworld.main.OfflineServiceActivity"
+            android:enabled="true"
+             /> 
+        
+    </application>
+
+</manifest>
